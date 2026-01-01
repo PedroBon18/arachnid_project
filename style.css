@@ -1,0 +1,369 @@
+/* CONFIGURAÇÕES GERAIS */
+body {
+    background-image: url('https://img.freepik.com/vetores-gratis/fundo-de-textura-de-madeira-realista_23-2149221129.jpg?semt=ais_hybrid&w=740&q=80');
+    background-size: cover;
+    background-position: center;
+    background-color: #4a3222;
+    color: #1a1a1a;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+.language-switch {
+    position: fixed; 
+    top: 20px;
+    right: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 8px 15px;
+    border: 2px solid #000;
+    box-shadow: 4px 4px 0 #000;
+    z-index: 1000;
+    text-transform: uppercase;
+}
+
+.language-switch a {
+    text-decoration: none;
+    color: #999;
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+
+.language-switch a:hover {
+    color: #000;
+}
+
+.language-switch a.active {
+    color: #ce1212; 
+    text-decoration: underline;
+}
+
+/* O CONTAINER DO JORNAL (A Folha de Papel)  */
+.jornal-container {
+    max-width: 1000px;
+    margin: 50px auto; 
+    padding: 20px 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    border: 1px solid #dcdcdc;
+    
+    /* simulação do papel amarelado */
+    background-color: #f9f7f1;
+    background-image: linear-gradient(to bottom, #fdfbf7 0%, #efebd8 100%);
+    position: relative;
+}
+
+/*  ESTILOS GERAIS DE TEXTO E LAYOUT  */
+p {
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+}
+
+h2, h3, h4 {
+    color: #000;
+}
+
+/* Grid Principal (Colunas: Notícia e Lateral) */
+.conteudo-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+.artigo-lateral {
+    border-left: 1px solid #000;
+    padding-left: 20px;
+}
+
+/* Linhas Separadoras */
+.linha-grossa {
+    border-top: 5px solid #000;
+    margin-bottom: 5px;
+}
+
+.linha-dupla {
+    border-top: 3px double #000;
+    border-bottom: 1px solid #000;
+    height: 4px;
+    margin: 5px 0;
+}
+
+/* Rodapé das Páginas */
+.rodape-pagina {
+    text-align: center;
+    font-size: 0.7rem;
+    margin-top: 30px;
+    border-top: 1px solid #000;
+    padding-top: 5px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+/* CAPA */
+.meta-dados {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.logo-container {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.logo-img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    filter: contrast(110%);
+}
+
+.editor-bar {
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 4px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    background-color: rgba(0,0,0,0.02);
+}
+
+.manchete-principal {
+    text-align: center;
+    font-family: 'Impact', 'Oswald', sans-serif;
+    font-size: 5.5rem;
+    line-height: 0.9;
+    margin: 20px 0 30px 0;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    transform: scaleY(1.1);
+    border-bottom: 3px solid #000;
+    padding-bottom: 15px;
+}
+
+.primeira-letra {
+    float: left;
+    font-size: 3.8rem;
+    line-height: 0.8;
+    font-weight: bold;
+    padding-right: 8px;
+    font-family: 'Impact', sans-serif;
+}
+
+.foto-container {
+    padding: 0;
+    margin-bottom: 15px;
+    border: 1px solid #000;
+}
+
+.foto-jornal {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(100%) contrast(130%) brightness(110%);
+}
+
+.legenda {
+    font-size: 0.85rem;
+    font-family: Arial, sans-serif;
+    padding: 5px;
+    border-top: 1px solid #000;
+    background-color: #fff;
+    text-align: left;
+}
+
+.credito-foto {
+    display: block;
+    font-weight: bold;
+    font-size: 0.7rem;
+    color: #444;
+    text-transform: uppercase;
+    margin-top: 2px;
+}
+
+/* NOTÍCIAS LOCAIS DA PÁGINA 2  */
+.header-pagina2 {
+    border-bottom: 2px solid #000;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.flex-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.titulo-pagina2 {
+    font-family: 'Impact', sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.manchete-media {
+    font-family: 'Impact', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.box-foto-simulada {
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.secao-titulo {
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.texto-pequeno p {
+    font-size: 0.85rem;
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+/*  CLASSIFICADOS DA PÁGINA 3 */
+.grid-classificados {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+    gap: 15px;
+    border-top: 2px solid #000;
+    padding-top: 10px;
+}
+
+.coluna-classificado {
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+}
+
+.coluna-classificado:last-child {
+    border-right: none;
+}
+
+.titulo-categoria {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    padding: 3px;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+.item-vaga {
+    margin-bottom: 15px;
+    border-bottom: 1px dotted #999;
+    padding-bottom: 10px;
+}
+
+.titulo-vaga {
+    font-family: 'Impact', sans-serif;
+    font-size: 1rem;
+    margin: 0 0 3px 0;
+    color: #ce1212;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.item-vaga p {
+    font-family: 'Arial', sans-serif;
+    font-size: 0.75rem;
+    line-height: 1.3;
+    text-align: left;
+}
+
+.box-destaque {
+    border: 2px dashed #000;
+    padding: 5px;
+    background-color: #fff;
+    margin-top: 20px;
+    transform: rotate(-2deg);
+}
+
+/* DOSSIÊ/SOBRE DA PÁGINA 4 */
+.botao-github {
+    display: inline-block;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-family: 'Impact', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border: 3px solid #ce1212;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 0 rgba(0,0,0,0.3);
+    margin-top: 10px;
+}
+
+.botao-github:hover {
+    background-color: #ce1212;
+    color: #fff;
+    transform: scale(1.05) rotate(-2deg);
+    box-shadow: 8px 8px 0 rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+/*  RESPONSIVIDADE (CELULAR) */
+@media (max-width: 768px) {
+    .language-switch {
+        position: static;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+
+    .conteudo-grid, .grid-classificados {
+        grid-template-columns: 1fr; 
+    }
+    
+    .artigo-lateral {
+        border-left: none;
+        border-top: 4px double #000;
+        padding-left: 0;
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+    
+    .manchete-principal {
+        font-size: 3rem;
+    }
+    
+    .jornal-container {
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .coluna-classificado {
+        border-right: none;
+        border-bottom: 2px solid #000;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+}
