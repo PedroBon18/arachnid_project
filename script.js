@@ -100,5 +100,4 @@ if (editorBar) {
 console.log("Olá, Amigão da Vizinhança! Se você está lendo isso, você é um Dev curioso.");
 console.log("Com grandes poderes vêm grandes responsabilidades.")
 console.log("Hello, Neighbor Friend! If you're reading this, you're a curious Dev.");
-console.log("Com grandes poderes vêm grandes responsabilidades.")
 console.log("With great power comes great responsibility.")
